@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+.modaler {
+	width: 100vw;
+	height: 100vh;
+	background-color: #FAEBD7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: 1s;
+	backdrop-filter: blur(10px);
+
+
+}
+
+.modaler.active {
+	opacity: 1;
+	pointer-events: all;
+	position: fixed;
+	z-index: 1;
+}
+
+h1 {
+	font-family: 'Alice', serif;
+	font-size: 25px;
+}
+
+.autor-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 100%;
+	height: 50px;
+	align-items: center;
+}
+
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	padding: 5px 10px;
+	margin: 5px 10px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	background: black;
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	cursor: pointer;
+
+}
+
+.inputse {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.modaler__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	padding: 20px;
+	border-radius: 12px;
+	background: wjite;
+	height: 200px;
+	width: 400px;
+	border: 1px solid black;
+	transform: scale(0.5);
+	transition: 0.4s all;
+	background-color: pink;
+
+}
+
+.modaler__content {
+	transform: scale(1);
+}
+
+.close__popap {
+	top: 10px;
+	right: 15px;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
